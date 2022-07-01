@@ -10,7 +10,7 @@ func main() {
 	app.Use(logger.New())
 
 	app.Get("/", func(c *fiber.Ctx) error {
-		return c.SendString("ok")
+		return c.SendString("not-ok")
 	})
 
 	app.Listen(":3000")
